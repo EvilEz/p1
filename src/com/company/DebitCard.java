@@ -3,7 +3,6 @@ package com.company;
 import javax.naming.InsufficientResourcesException;
 import java.math.BigDecimal;
 
-
 public class DebitCard extends Card {
 
     public DebitCard(String name) {

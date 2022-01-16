@@ -26,7 +26,6 @@ public abstract class Card {
     }
 
 
-
     public BigDecimal getBalance() {
         return balance;
     }

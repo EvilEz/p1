@@ -8,7 +8,6 @@ import java.util.Objects;
 public class Atm {
     Card card;
 
-
     public Atm(Card card) {
         validateInputDate(card);
         this.card = card;

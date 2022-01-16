@@ -66,5 +66,3 @@ public abstract class Card {
     }
 }
 
-
-

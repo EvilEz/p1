@@ -5,3 +5,4 @@ public class InvalidDataException extends RuntimeException {
         super(massage);
     }
 }
+

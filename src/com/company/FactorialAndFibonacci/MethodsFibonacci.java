@@ -2,6 +2,7 @@ package com.company.FactorialAndFibonacci;
 
 public class MethodsFibonacci {
 
+
     public void methodLoopTypeFibonacci(int loopType, int n) throws InsufficientFundsException {
 
         switch (loopType) {

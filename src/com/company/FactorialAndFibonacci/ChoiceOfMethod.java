@@ -17,7 +17,6 @@ public class ChoiceOfMethod {
         else {
             throw new InsufficientFundsException("Выбрано неправильное число");
         }
-
         }
         }
 

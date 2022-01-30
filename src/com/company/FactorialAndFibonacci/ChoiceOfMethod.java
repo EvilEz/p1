@@ -2,10 +2,10 @@ package com.company.FactorialAndFibonacci;
 
 public class ChoiceOfMethod {
 
+
     MethodsFactorial methodsFactorial;
     MethodsFibonacci methodsFibonacci;
     InsufficientFundsException insufficientFundsException;
-
     public void ChoiceMethod (int algorithmId, int n, int loopType) throws InsufficientFundsException {
         //выбираем метод через условие и передаем n
         if ( algorithmId == 1) {

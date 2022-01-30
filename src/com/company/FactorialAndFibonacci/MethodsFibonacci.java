@@ -4,7 +4,6 @@ public class MethodsFibonacci {
 
 
     public void methodLoopTypeFibonacci(int loopType, int n) throws InsufficientFundsException {
-
         switch (loopType) {
             case 1:
                 fibonacciDoWhile(n);
@@ -19,7 +18,6 @@ public class MethodsFibonacci {
                 throw new InsufficientFundsException("Выбрано неправильное число");
         }
     }
-
 
 
 public int fibonacciDoWhile(int n) {

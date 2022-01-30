@@ -19,6 +19,7 @@ public class MethodsFactorial {
         }
     }
 
+
     public int factorialDoWhile (int n){
         int fact = n;
         int numb1 = 1;

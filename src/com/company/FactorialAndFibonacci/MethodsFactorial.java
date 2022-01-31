@@ -2,8 +2,8 @@ package com.company.FactorialAndFibonacci;
 
 public class MethodsFactorial {
 
-    public void methodLoopTypeFactorial(int loopType, int n) throws InsufficientFundsException {
 
+    public void methodLoopTypeFactorial(int n, int loopType) throws InsufficientFundsException {
         switch (loopType) {
             case 1:
                 factorialDoWhile(n);
@@ -14,23 +14,22 @@ public class MethodsFactorial {
             case 3:
                 factorialFor(n);
                 break;
-            case 4:
+            default:
                 throw new InsufficientFundsException("Выбрано неправильное число");
-        }
+            }
     }
 
 
-    public int factorialDoWhile (int n){
-        int fact = n;
-        int numb1 = 1;
-        int firstNumb = 1;
+    public int factorialDoWhile (int n) {
+        int fact = 1;
+        int i = 1;
+        int num = n;
         do {
-            numb1 = numb1 * firstNumb;
-            firstNumb++;
-            numb1 = n;
-        } while (firstNumb<=fact);
-        return n;
-    }
+            fact = fact * i;
+            i++;
+        } while( i <= num );
+        return fact;
+}
 
 
     public int factorialWhile(int n){
@@ -42,18 +41,23 @@ public class MethodsFactorial {
             fact = fact * firstNumbOnFactorial;
             firstNumbOnFactorial++;
         }
-       return factorialNumb;
+        return fact;
     }
 
     public int factorialFor(int n) {
-        int factNumb = 5;
-        int numb1 = n;
+        int factNumb = n;
+        int numb1 = 1;
 
         for (int i = 1; i <=factNumb; i++) {
             numb1 = numb1 * i;
         }
-        return n;
+        return numb1;
     }
+
+    public void methodLoopTypeFactorial(int n) {
+    }
+
+
 
 }
 

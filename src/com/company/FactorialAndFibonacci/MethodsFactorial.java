@@ -16,7 +16,7 @@ public class MethodsFactorial {
                 break;
             default:
                 throw new InsufficientFundsException("Выбрано неправильное число");
-            }
+        }
     }
 
 
@@ -28,7 +28,8 @@ public class MethodsFactorial {
             fact = fact * i;
             i++;
         } while( i <= num );
-        return fact;
+        System.out.println(fact);
+        return 0;
 }
 
 
@@ -41,7 +42,8 @@ public class MethodsFactorial {
             fact = fact * firstNumbOnFactorial;
             firstNumbOnFactorial++;
         }
-        return fact;
+        System.out.println(fact);
+        return 0;
     }
 
     public int factorialFor(int n) {
@@ -51,7 +53,8 @@ public class MethodsFactorial {
         for (int i = 1; i <=factNumb; i++) {
             numb1 = numb1 * i;
         }
-        return numb1;
+        System.out.println(numb1);
+        return 0;
     }
 
     public void methodLoopTypeFactorial(int n) {
